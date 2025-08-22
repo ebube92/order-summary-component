@@ -1,1 +1,6 @@
 @import "tailwindcss";
+
+@theme {
+    --color-bg1: hsl(225, 100%, 94%);
+    --color-bg2: hsl(225,100%, 98%);
+}
