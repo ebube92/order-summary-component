@@ -1,12 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Order Summary</title>
-    <link rel="stylesheet" href="output.css">
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    class="bg-[image:url('images/pattern-background-mobile.svg')] md:bg-[image:url('images/pattern-background-desktop.svg')] bg-bg1 bg-no-repeat bg-contain flex items-center justify-center min-h-screen font-family"
+  >
+    <main class="flex flex-col w-[80%] md:w-[400px]">
+      <div class="rounded-t-2xl">
+        <img
+          src="images/illustration-hero.svg"
+          alt="Order summary image"
+          class="rounded-t-xl"
+        />
+      </div>
+
+      <div class="bg-white rounded-b-2xl p-6 space-y-6 text-center">
+        <h1 class="text-lg font-bold">Order Summary</h1>
+        <p class="text-gray-600">
+          You can now listen to millions of songs, audiobooks, and podcasts on
+          any device anywhere you go.
+        </p>
+
+        <div>
+          <div>
+            <img src="images/icon-music.svg" alt="Music icon" />
+            <span class="font-bold">Annual Plan</span>
+            <span class="text-gray-600"> $59.99/year</span>
+          </div>
+          <a href="#" class="underline text-gray-600 hover:text-black"
+            >Change</a
+          >
+        </div>
+
+        <button
+          class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700"
+        >
+          Proceed to Payment
+        </button>
+        <a
+          href="Cancel Order"
+          class="w-full underline text-gray-600 hover:text-black"
+          >Cancel Order</a
+        >
+      </div>
+    </main>
+  </body>
 </html>
