@@ -15,7 +15,7 @@
   <body
     class="bg-[image:url('images/pattern-background-mobile.svg')] md:bg-[image:url('images/pattern-background-desktop.svg')] bg-bg1 bg-no-repeat bg-contain flex items-center justify-center min-h-screen font-family"
   >
-    <main class="flex flex-col w-[80%] md:w-[400px]">
+    <main class="flex flex-col w-[90%] md:w-[400px] shadow-xl">
       <div class="rounded-t-2xl">
         <img
           src="images/illustration-hero.svg"
@@ -24,32 +24,38 @@
         />
       </div>
 
-      <div class="bg-white rounded-b-2xl p-6 space-y-6 text-center">
-        <h1 class="text-lg font-bold">Order Summary</h1>
-        <p class="text-gray-600">
+      <div class="bg-white rounded-b-2xl p-8 space-y-5 text-center text-text">
+        <h1 class="text-3xl font-[900]">Order Summary</h1>
+        <p class="text-text font-[500]">
           You can now listen to millions of songs, audiobooks, and podcasts on
-          any device anywhere you go.
+          any device anywhere you like!
         </p>
 
-        <div>
-          <div>
+        <div
+          class="bg-bg2 rounded-xl p-6 flex items-center justify-between mb-6"
+        >
+          <div class="flex items-center space-x-4">
             <img src="images/icon-music.svg" alt="Music icon" />
-            <span class="font-bold">Annual Plan</span>
-            <span class="text-gray-600"> $59.99/year</span>
+            <div class="flex flex-col text-left">
+              <span class="font-[900]">Annual Plan</span>
+              <span class="text-gray-600"> $59.99/year</span>
+            </div>
           </div>
-          <a href="#" class="underline text-gray-600 hover:text-black"
+          <a
+            href="#"
+            class="underline text-sm font-bold text-link hover:text-link/60 hover:no-underline"
             >Change</a
           >
         </div>
 
         <button
-          class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700"
+          class="w-full bg-link font-bold text-sm text-white py-3.5 rounded-lg hover:bg-link/70 cursor-pointer shadow-gray-700 drop-shadow-xl"
         >
           Proceed to Payment
         </button>
         <a
           href="Cancel Order"
-          class="w-full underline text-gray-600 hover:text-black"
+          class="w-full text-text/60 hover:text-text font-bold text-sm cursor-pointer"
           >Cancel Order</a
         >
       </div>
